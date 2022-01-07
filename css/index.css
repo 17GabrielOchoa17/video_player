@@ -1,8 +1,6 @@
 :root {
   --Primary: #43DDE6;
   --White: #ffffff; 
-  
-  
 }
 *{
   box-sizing: border-box;
@@ -16,33 +14,41 @@
 body {
   color: var(--White);
   background-color: var(--Primary);
-  /*position: relative;*/
   width: 100%;
   height: 100%;
 }
 
-}
 .container {
+  border: 1px solid orange;
   position: absolute;
   width: 900px;
   height: 500px;
   left: 233px;
   top: 134px;
-  
-  
-
 }
-/* .video_suei {
+
+.container-video{
   position: absolute;
   width: 100%;
   height: 100%;
-  left: 233px;
-  top: 134px;
-} */
+}
 
-#img {
+.video_suei {
   position: absolute;
   width: 100%;
   height: 100%
+} 
 
+/* @media screen and (mix-widh: 360px ) 
+{
+  .container {
+    width: 328px;
+    height: 184px;
+  }
+} */
+
+@media screen and (mix-width: 360px) {
+  .container{
+    background: black;
+  }
 }
